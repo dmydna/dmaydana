@@ -14,7 +14,27 @@ function CarouselImages({images, children, col, className, order=false}) {
     return (
 
         <div className={`row ${className}  position-relative rounded  h-100`}>
-            <div className={`position-absolute bottom-0 col-12 d-flex justify-content-${order ? 'center' : 'between'}  order-${order ? 2 : 1}`}>
+
+
+            {images?.length > 1 &&
+                <Carousel className={`col-12 order-${order ? 1 : 2} carousel-dark`}
+                          indicators={false} variant="light" activeIndex={index} onSelect={handleSelect}>
+                    {images?.map((img, index)=>(
+                        <Carousel.Item key={index}>
+                            <div className=" d-flex justify-content-around">
+                                <img className='rounded' src={img} height={300} />
+                            </div>
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
+            }
+            {images?.length == 1 &&
+                <div className=" d-flex justify-content-around">
+                    <img src={images[0]} height={300} />
+                </div>
+            }
+
+            <div className={`col-12 d-flex justify-content-${order ? 'center' : 'between'}  order-${order ? 2 : 1}`}>
                 <div>
                     {children} {/* header */}
                 </div>
@@ -33,23 +53,6 @@ function CarouselImages({images, children, col, className, order=false}) {
                 </div>
             </div>
 
-            {images?.length > 1 &&
-                <Carousel className={`col-12 order-${order ? 1 : 2} carousel-dark`}
-                          indicators={false} variant="light" activeIndex={index} onSelect={handleSelect}>
-                    {images?.map((img, index)=>(
-                        <Carousel.Item key={index}>
-                            <div className=" d-flex justify-content-around">
-                                <img src={img} height={300} />
-                            </div>
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
-            }
-            {images?.length == 1 &&
-                <div className=" d-flex justify-content-around">
-                    <img src={images[0]} height={300} />
-                </div>
-            }
         </div>
     );
 }

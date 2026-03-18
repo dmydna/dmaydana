@@ -23,7 +23,9 @@ export function ModalProvider({ children }) {
         setContent({
             title: data.title || '',
             description: data.description || '',
-            images: data.images || []
+            images: data.images || [],
+            codeLink: data.codeLink || '#',
+            liveLink: data.liveLink || '#'
         });
         setShow(true);
     };

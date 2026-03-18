@@ -36,7 +36,7 @@ function ProyectModal({show, closeModal, openModal, content}) {
                  />
 
                 <div className='d-flex gap-3 justify-content-center text-center'>
-                    <a href={content?.codeLink || '#'}>
+                    <a target="_blank" rel="noopener noreferrer" href={content?.codeLink}>
                         <Button
                             className='small border rounded-3' variant='outline-light'>
                             <i className="bi bi-code me-2"></i>
@@ -44,7 +44,7 @@ function ProyectModal({show, closeModal, openModal, content}) {
                         </Button>
                     </a>
 
-                    <a href={content?.liveLink || '#'}>
+                    <a target="_blank" rel="noopener noreferrer" href={content?.liveLink}>
                     <Button className='small border rounded-3' variant='light'>
                         <i className="bi bi-eye me-2"></i>
                         ver demo

@@ -3,8 +3,17 @@ import {useModal} from "../contexts/ModalContext.jsx";
 import {useEffect} from "react";
 import Img1 from '../assets/image.svg'
 
-function CardItem({title, description, stack, images}) {
+function CardItem({itemData}) {
 
+
+    const {
+        title,
+        description,
+        codeLink,
+        codeLive ,
+        liveLink,
+        stack,
+        images } = itemData
 
     const { openModal } = useModal();
 
@@ -12,7 +21,7 @@ function CardItem({title, description, stack, images}) {
     return (
         <Col className='p-0' md={12} lg={6}>
             <div
-                onClick={() => openModal({ title, images })}
+                onClick={() => openModal({ title, images, codeLink, liveLink })}
                 className='card pointer bg-transparent island border p-3 m-1'>
                 <div className='mb-2'>
                     <i className="bi bi-journal-code me-2"></i>

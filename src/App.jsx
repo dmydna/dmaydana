@@ -13,8 +13,8 @@ function App() {
 
 
   return (
-          <main className={`bd-masthead bg-dark
-       flex-grow-1 p-3 px-0`} data-bs-theme="dark">
+      <>
+          <main>
               <UIWrapper>
               <Container fluid="xl">
                   <Row>
@@ -33,9 +33,10 @@ function App() {
 
                   </Row>
               </Container>
-               <Footer/>
               </UIWrapper>
           </main>
+          <Footer/>
+          </>
   )
 }
 

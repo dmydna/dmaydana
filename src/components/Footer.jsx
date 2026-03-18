@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
 
     return (
-        <footer className="border-top text-center py-5 mt-5">
+        <footer className="mt-auto border-top text-center py-5 mt-5">
             <Container fluid="xl">
                 <Row>
                     <Col className='order-2 mt-4' xs={12} md={6}>
