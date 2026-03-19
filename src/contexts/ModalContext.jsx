@@ -24,8 +24,8 @@ export function ModalProvider({ children }) {
             title: data.title || '',
             description: data.description || '',
             images: data.images || [],
-            codeLink: data.codeLink || '#',
-            liveLink: data.liveLink || '#'
+            codeLink: data.codeLink || null,
+            liveLink: data.liveLink || null
         });
         setShow(true);
     };

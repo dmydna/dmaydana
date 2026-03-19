@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import { Card, Col } from "react-bootstrap";
 import userpic from "../assets/profile.svg"
+import CopyButton from "./CopyButton.jsx";
 
 
 function CardProfile({ name, image, children, className, imgSize }) {
@@ -44,11 +45,14 @@ function CardProfile({ name, image, children, className, imgSize }) {
                 <Card.Title className='fs-5'>
                     { profile?.name || "N/A"}
                 </Card.Title>
-                <Card.Text>
-                    <i className="bi bi-envelope-check me-2 fs-4"></i>
-                    <small className="small text-body-secondary">
-                    {  profile?.email || 'user@mail.com' }
-                    </small>
+                <Card.Text className='d-flex justify-content-between align-items-center pointer'>
+                    <div>
+                        <i className="bi bi-envelope-check me-2 fs-4"></i>
+                        <small className="small text-body-secondary">
+                            {  profile?.email || 'user@mail.com' }
+                        </small>
+                    </div>
+                    <CopyButton message={profile?.email} ></CopyButton>
                 </Card.Text>
                 <Card.Text >
                 <span className="text-secondary fs-6">

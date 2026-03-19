@@ -15,7 +15,7 @@ function AboutMe(){
 
     return (
         <Col className='p-0' md={12}>
-            <div className='pointer island border p-3'>
+            <div className='island border p-3'>
                 <small className='text-muted'>
                     Desarrollador de Software y estudiante de Ciencias de la Computación en la UBA,
                     con sólidos fundamentos en programación de bajo nivel (C, x86 Assembly)

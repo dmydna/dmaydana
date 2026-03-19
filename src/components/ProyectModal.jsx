@@ -36,20 +36,23 @@ function ProyectModal({show, closeModal, openModal, content}) {
                  />
 
                 <div className='d-flex gap-3 justify-content-center text-center'>
-                    <a target="_blank" rel="noopener noreferrer" href={content?.codeLink}>
-                        <Button
-                            className='small border rounded-3' variant='outline-light'>
-                            <i className="bi bi-code me-2"></i>
-                            ver codigo
-                        </Button>
-                    </a>
-
-                    <a target="_blank" rel="noopener noreferrer" href={content?.liveLink}>
-                    <Button className='small border rounded-3' variant='light'>
-                        <i className="bi bi-eye me-2"></i>
-                        ver demo
-                    </Button>
-                    </a>
+                    {content?.codeLink && (
+                        <a target="_blank" rel="noopener noreferrer" href={content?.codeLink}>
+                            <Button
+                                className='small border rounded-4' variant='outline-light'>
+                                <i className="bi bi-code me-2"></i>
+                                ver codigo
+                            </Button>
+                        </a>
+                    )}
+                    {content?.liveLink && (
+                        <a target="_blank" rel="noopener noreferrer" href={content?.liveLink}>
+                            <Button className='small border rounded-4' variant='light'>
+                                <i className="bi bi-eye me-2"></i>
+                                ver demo
+                            </Button>
+                        </a>
+                    )}
                 </div>
 
             </Modal.Body>

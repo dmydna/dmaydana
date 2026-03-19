@@ -10,7 +10,7 @@ function CardItem({itemData}) {
         title,
         description,
         codeLink,
-        codeLive ,
+        codeLive,
         liveLink,
         stack,
         images } = itemData
@@ -23,7 +23,7 @@ function CardItem({itemData}) {
             <div
                 style={{height: '-webkit-fill-available'}}
                 onClick={() => openModal({ title, images, codeLink, liveLink })}
-                className='card pointer bg-transparent island border p-3 m-1'>
+                className='card pointer bg-transparent bg1-hover island border p-3 m-1'>
                 <div className='mb-2'>
                     <div>
                         <i className="bi bi-journal-code me-2"></i>

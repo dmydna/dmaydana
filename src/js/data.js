@@ -10,21 +10,22 @@ import Fullstack2 from '../assets/live-preview/fullstack-cap-2.png'
 import Fullstack3 from '../assets/live-preview/fullstack-cap-3.png'
 import Fullstack4 from '../assets/live-preview/fullstack-cap-4.png'
 
+export const GITHUB_URL = 'https://github.com/dmydna'
+export const LINKEDIN_URL = '#'
 
-
-const [Javascript, Html, Css, React, SpringBoot,Docker] = [
+const [Javascript, Html, Css, React, SpringBoot,Docker, Bootstrap] = [
     {code: 'Javascript', color:'js'},
     {code: 'Html', color:'html5'},
     {code: 'Css', color:'css'},
     {code: 'React JS', color:'reactjs'},
     {code: 'SpringBoot', color:'springboot'},
-    {code: 'Docker', color:'docker'}
+    {code: 'Docker', color:'docker'},
+    {code: 'Bootstrap', color:'bootstrap'}
 ]
-
 
 export const itemsData = [
     {
-        title:'Randbox-game',
+        title:'randbox-game',
         description:
             'Un juego iteractivo desarrollado integramente con JavasScript Vanilla(ES6+).'+
             'Cuenta con una arquitectura propia para la gestion de estados y flujo de eventos.' +
@@ -32,37 +33,39 @@ export const itemsData = [
         stack:[ Javascript, Html, Css ],
         images:[ Randbox1, Randbox2 ],
         liveLink:'https://randbox.netlify.app/',
-        codeLink:'https://github.com/dmydna/randbox',
+        codeLink: GITHUB_URL + '/randbox',
     },
     {
         title: 'simpleshop-fullstack',
         description:
             'Es un ecommerce completo. Implementa una api restful con ' +
-            'autentificacion mediante JWT (JSON Web Tokens), paginacion desde el servidor, ' +
-            'manejo de bases de datos relacionales y '+
-            'persistencia real de usuarios y pedidos.',
-        codeLink: 'https://github.com/dmydna/simple-shop-docker/tree/dev',
-        liveLink: '#',
+            'autentificacion mediante JWT (JSON Web Tokens), ' +
+            'paginacion desde el servidor, manejo de bases de datos ' +
+            'relacionales y persistencia real de usuarios y pedidos.',
+        codeLink: GITHUB_URL + '/simpleshop-fullstack',
+        liveLink: null,
         stack: [ React, SpringBoot, Docker ],
         images:[ Fullstack2, Fullstack1, Fullstack3,  Fullstack4 ]
     },
     {
-        title: 'simpleshop-frontend',
+        title: 'simpleshop-demo',
         description:
             'Es una aplicacion de e-commerce moderna. ' +
-            'Implementa funcialidades complejas como carrito de Compras, Crud de productos, busqueda por filtros ' +
-            'y simulacion de login.',
-        codeLink: 'https://github.com/dmydna/tp-simple-shop',
+            'Implementa un frontend con funcialidades complejas '+
+            'como carrito de Compras, Crud de productos, '+
+            'busqueda por filtros y simulacion de login.',
+        codeLink: GITHUB_URL + '/simpleshop-demo',
         liveLink: 'https://tpsimpleshop.netlify.app/',
-        stack: [ React ],
+        stack: [ React, Bootstrap ],
         images:[ Simpleshop1, Simpleshop2 ]
     },
     {
         title: 'viajecitos',
         description:
-            'Es un sitio web estatico tipo landing-page, cuenta con varias secciones ' +
+            'Es un sitio web estatico tipo landing-page, ' +
+            'cuenta con varias secciones ' +
             'con  diseño adaptable a dispositivos moviles.',
-        codeLink: 'https://github.com/dmydna/viajecitos',
+        codeLink: GITHUB_URL + '/viajecitos',
         liveLink: 'https://viajecitos.netlify.app/',
         stack: [ Javascript, Html, Css ],
         images:[ Viajecitos1, Viajecitos2 ]
