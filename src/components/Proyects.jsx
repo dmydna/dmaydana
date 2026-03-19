@@ -7,8 +7,8 @@ function Proyects(){
 
     return (
    <>
-      {itemsData.map((item)=>(
-          <CardItem itemData={item} />
+      {itemsData.map((item, index)=>(
+          <CardItem key={index} itemData={item} />
       ))}
    </>
 

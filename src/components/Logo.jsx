@@ -1,6 +1,8 @@
 import React from "react";
 import {Navbar} from "react-bootstrap";
 import { Link} from "react-router-dom";
+import logo from "../assets/vite.svg"
+
 
 function Logo({theme}){
 
@@ -8,8 +10,11 @@ function Logo({theme}){
 
     return(
         <Navbar.Brand as={Link} to="/" className={`p-0`}>
-            <b style={{opacity:'7'}} className={`h3 fw-bolder text-${theme}`}>Dani</b>
-            <b className="text-danger" style={subLogo}> dev</b>
+            <b style={{opacity:'7'}} className={`h3 fw-bolder text-${theme}`}>dmaydna</b>
+            <b className="text-danger" style={subLogo}>
+                Dev
+                {/*<img width={20} height={20} src={logo} alt="logo"/>*/}
+            </b>
         </Navbar.Brand>
     )
 }

@@ -22,7 +22,15 @@ function CarouselImages({images, children, col, className, order=false}) {
                     {images?.map((img, index)=>(
                         <Carousel.Item key={index}>
                             <div className=" d-flex justify-content-around">
-                                <img className='rounded' src={img} height={300} />
+                                <img className='rounded w-xs-100 ' src={img}
+                                     style={{
+                                         objectFit: 'cover',
+                                         height: '300px',
+                                         marginInline: "auto",
+                                         backgroundColor: "rgba(255, 255, 255, 0.05)"
+                                     }}
+
+                                />
                             </div>
                         </Carousel.Item>
                     ))}

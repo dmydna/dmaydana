@@ -23,6 +23,15 @@
     --bd-violet-rgb: 113, 44, 249;
     --bd-pink-rgb: 214, 51, 132;
 
+    --js-color-hex: #F7DF1E;
+    --html5-color-hex:#E34F26;
+    --css-color-hex: #1572B6;
+    --react-js-color-hex: #61DAFB;
+    --springboot-color-hex: #6DB33F;
+    --docker-color-hex: #2496ED;
+    --bootstrap-color-hex: #6DB33F;
+
+
 }
 
 .onhover:hover {
@@ -390,15 +399,16 @@ hr {
 
 }
 
+.w-xs-100 {width: 100%!important;}
 
 @media (max-width: 1399.98px) { /* xl */ }
 @media (max-width: 1199.98px) { /* lg */ }
-@media (max-width: 991.98px)  { /* md */ }
+@media (max-width: 991.98px)  { /* md */  }
 @media (max-width: 767.98px)  { /* sm */
     .multi-col-dropdown-menu{ column-count: 2; }
 }
 @media (max-width: 575.98px)  { /* xs */
-
+    .w-xs-100{ width: auto!important; }
     .bg-wave-0{
         background: url('./bg-wave-sm.svg');
         background-size: cover;
@@ -423,11 +433,12 @@ hr {
     cursor: pointer;
 }
 
-.marker-cian::before,
-.marker-orange::before,
-.marker-green::before,
-.marker-blue::before,
-.marker-red::before {
+.marker-docker::before,
+.marker-springboot::before,
+.marker-css::before,
+.marker-html5::before,
+.marker-js::before,
+.marker-reactjs::before {
     margin-right: 5px;
     content: '';
     display: inline-block;
@@ -436,23 +447,13 @@ hr {
     border-radius: 100%;
 }
 
-.marker-red::before {
-    background-color: red
-}
-.marker-blue::before {
-    background-color: blue
-}
-.marker-green::before {
-    background-color: green
-}
+.marker-html5::before { background-color: var(--html5-color-hex); }
+.marker-css::before { background-color: var(--css-color-hex); }
+.marker-springboot::before { background-color: var(--springboot-color-hex);}
+.marker-js::before { background-color: var(--js-color-hex); }
+.marker-docker::before { background-color: var(--docker-color-hex); }
+.marker-reactjs::before { background-color: var(--docker-color-hex); }
 
-.marker-orange::before {
-    background-color: orange
-}
-
-.marker-cian::before {
-    background-color: cornflowerblue
-}
 
 
 

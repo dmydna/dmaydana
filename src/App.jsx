@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
 import {Col, Row, Container} from "react-bootstrap";
 import CardProfile from "./components/CardProfile.jsx";
-import CardItem from "./components/CardItem.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Social from "./components/Social.jsx";
 import Projects from "./components/Proyects.jsx"
@@ -26,7 +25,7 @@ function App() {
                           <Row className='mb-5'>
                               <p className='h5 my-4 px-2 text-body-emphasis'>About Me</p>
                               <AboutMe />
-                              <p className='h5 my-4 px-2 text-body-emphasis'>Proyectos</p>
+                              <p className='h5 my-4 px-2 text-body-emphasis'>Projects</p>
                               <Projects/>
                           </Row>
                       </Col>
