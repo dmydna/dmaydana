@@ -23,7 +23,7 @@ function App() {
                       </Col>
                       <Col md={12} lg={9}>
                           <Row className='mb-5'>
-                              <p className='h5 my-4 px-2 text-body-emphasis'>Acerca de mí</p>
+                              <p className='h5 my-4 px-2 text-body-emphasis'>Acerca de</p>
                               <AboutMe />
                               <p className='h5 my-4 px-2 text-body-emphasis'>Proyectos</p>
                               <Projects/>

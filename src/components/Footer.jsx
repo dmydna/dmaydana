@@ -21,7 +21,7 @@ function Footer() {
                         </div>
                         <div className='border-left d-block'>
                             <p className=" text-body-secondary text-center text-md-start small mb-0">
-                                © 2026 creado por dmaydana. Todos los derechos reservados</p>
+                                © 2026 Creado por dmaydana. Todos los derechos reservados</p>
                         </div>
                     </Col>
                 </Row>
