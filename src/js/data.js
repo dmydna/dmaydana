@@ -36,26 +36,26 @@ export const itemsData = [
         codeLink: GITHUB_URL + '/randbox',
     },
     {
-        title: 'simpleshop-fullstack',
+        title: 'simpleshop-backend',
         description:
-            'Es un ecommerce completo. Implementa una api restful con ' +
-            'autentificacion mediante JWT (JSON Web Tokens), ' +
-            'paginacion desde el servidor, manejo de bases de datos ' +
+            'Implementa una api restful con ' +
+            'autentificacion mediante JWT (JSON Web Tokens) + Cookies, ' +
+            'paginacion desde el servidor, manejo de bases de datos (MySQL) ' +
             'relacionales y persistencia real de usuarios y pedidos.',
-        codeLink: GITHUB_URL + '/simpleshop-fullstack',
+        codeLink: GITHUB_URL + '/simpleshop-backend',
         liveLink: null,
         stack: [ React, SpringBoot, Docker ],
         images:[ Fullstack2, Fullstack1, Fullstack3,  Fullstack4 ]
     },
     {
-        title: 'simpleshop-demo',
+        title: 'simpleshop-frontend',
         description:
-            'Es una aplicacion de e-commerce moderna. ' +
             'Implementa un frontend con funcialidades complejas '+
-            'como carrito de Compras, Crud de productos, '+
-            'busqueda por filtros y simulacion de login.',
-        codeLink: GITHUB_URL + '/simpleshop-demo',
-        liveLink: 'https://tpsimpleshop.netlify.app/',
+            'como carrito de Compras, Dashboard con Metricas, Crud de varias entidades,' +
+            'Panel de usuario con secciones tematicas, '+
+            'Pagina Home basadas en estadisticas, busqueda por filtros y autentificacion por cookies. ',
+        codeLink: GITHUB_URL + '/simpleshop-frontend',
+        liveLink: 'https://simpleshop-mock.netlify.app/',
         stack: [ React, Bootstrap ],
         images:[ Simpleshop1, Simpleshop2 ]
     },
