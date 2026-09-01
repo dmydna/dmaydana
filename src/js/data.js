@@ -9,6 +9,8 @@ import Fullstack1 from '../assets/live-preview/fullstack-cap-1.png'
 import Fullstack2 from '../assets/live-preview/fullstack-cap-2.png'
 import Fullstack3 from '../assets/live-preview/fullstack-cap-3.png'
 import Fullstack4 from '../assets/live-preview/fullstack-cap-4.png'
+import Fullstack5 from '../assets/live-preview/fullstack-cap-5.png'
+import Spring from '../assets/live-preview/spring.png'
 
 export const GITHUB_URL = 'https://github.com/dmydna'
 export const LINKEDIN_URL = '#'
@@ -45,19 +47,19 @@ export const itemsData = [
         codeLink: GITHUB_URL + '/simpleshop-backend',
         liveLink: null,
         stack: [ React, SpringBoot, Docker ],
-        images:[ Fullstack2, Fullstack1, Fullstack3,  Fullstack4 ]
+        images:[ Spring ]
     },
     {
         title: 'simpleshop-frontend',
         description:
-            'Implementa un frontend con funcialidades complejas '+
+            'Implementa un frontend (e-commerce) con funcialidades complejas '+
             'como carrito de Compras, Dashboard con Metricas, Crud de varias entidades,' +
-            'Panel de usuario con secciones tematicas, '+
-            'Pagina Home basadas en estadisticas, busqueda por filtros y autentificacion por cookies. ',
+            'Panel de usuario logeado con secciones tematicas, '+
+            'Pagina Home basadas en estadisticas, busqueda por filtros. ',
         codeLink: GITHUB_URL + '/simpleshop-frontend',
         liveLink: 'https://simpleshop-mock.netlify.app/',
         stack: [ React, Bootstrap ],
-        images:[ Simpleshop1, Simpleshop2 ]
+        images:[ Fullstack2, Fullstack1, Fullstack3,  Fullstack4, Fullstack5 ]
     },
     {
         title: 'viajecitos',

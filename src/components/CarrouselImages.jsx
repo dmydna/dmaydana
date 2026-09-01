@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-function CarouselImages({images, children, col, className, order=false}) {
+function CarouselImages({ images, children, col, className, order = false }) {
 
     const [index, setIndex] = useState(0);
 
@@ -18,17 +18,18 @@ function CarouselImages({images, children, col, className, order=false}) {
 
             {images?.length > 1 &&
                 <Carousel className={`col-12 order-${order ? 1 : 2} carousel-dark`}
-                          indicators={false} variant="light" activeIndex={index} onSelect={handleSelect}>
-                    {images?.map((img, index)=>(
+                    indicators={false} variant="light" activeIndex={index} onSelect={handleSelect}>
+                    {images?.map((img, index) => (
                         <Carousel.Item key={index}>
                             <div className=" d-flex justify-content-around">
                                 <img className='rounded w-xs-100 ' src={img}
-                                     style={{
-                                         objectFit: 'cover',
-                                         height: '300px',
-                                         marginInline: "auto",
-                                         backgroundColor: "rgba(255, 255, 255, 0.05)"
-                                     }}
+                                    style={{
+                                        maxWidth: '100%',
+                                        objectFit: 'cover',
+                                        height: '300px',
+                                        marginInline: "auto",
+                                        backgroundColor: "rgba(255, 255, 255, 0.05)"
+                                    }}
 
                                 />
                             </div>
@@ -38,7 +39,16 @@ function CarouselImages({images, children, col, className, order=false}) {
             }
             {images?.length == 1 &&
                 <div className=" d-flex justify-content-around">
-                    <img src={images[0]} height={300} />
+                    <img className='rounded w-xs-100 ' src={images[0]}
+                        style={{
+                            maxWidth: '100%',
+                            objectFit: 'cover',
+                            height: '300px',
+                            marginInline: "auto",
+                            backgroundColor: "rgba(255, 255, 255, 0.05)"
+                        }}
+
+                    />
                 </div>
             }
 
